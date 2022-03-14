@@ -82,10 +82,16 @@
 <p>Run devtools::document() to update NAMESPACE and man/FuncName.Rd</p>
 </li>
 <li>
+<p>Make sure you have README.rmd in the folder, modify it and use devtools::build_readme() to update. You can include r chunks, text, pictures into it. It will generate README.md</p>
+</li>
+<li>
 <p>Run devtools::check() to make sure there is no error, no warning, no notes before build the package</p>
 </li>
 <li>
 <p>Using CMD+shift+B to build the package, it will automatically library the new package so that we can try it ourselves.</p>
+</li>
+<li>
+<p>Commit all the changes to the github repository.</p>
 </li>
 </ol>
 <p><strong>Using other packages in FuncName.R</strong></p>

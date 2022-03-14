@@ -18,7 +18,7 @@ Basic Workflow
   Create a basic R package in R studio using New Project - New Dictionary - R Package
   Write functions in R/FuncName.R, including roxygen comments at the beginning of each function.
   Run devtools::document() to update NAMESPACE and man/FuncName.Rd
-  Run devtools::check() to make sure there is no error, no warning, no notes before build the package</description>
+  Make sure you have README.</description>
     </item>
     
     <item>
