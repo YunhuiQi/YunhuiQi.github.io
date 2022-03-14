@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.94.2" />
 
 
-<title>About - Yunhui&#39;s Blogs</title>
-<meta property="og:title" content="About - Yunhui&#39;s Blogs">
+<title>Create an R package Basic - Yunhui&#39;s Blogs</title>
+<meta property="og:title" content="Create an R package Basic - Yunhui&#39;s Blogs">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -59,44 +59,56 @@
 
   <article class="article">
     
+    <span class="article-duration">1 min read</span>
+    
 
-    <h1 class="article-title">About</h1>
+    <h1 class="article-title">Create an R package Basic</h1>
 
+    
+    <span class="article-date">2022-03-14</span>
     
 
     <div class="article-content">
-      <p>My name is Yunhui Qi, 3rd year Ph.D. student, <a href="https://www.stat.iastate.edu/">Department of Statistics</a>, <a href="https://www.iastate.edu/">Iowa State University</a>.</p>
-<p><strong>Education</strong></p>
-<ul>
-<li>Ph.D. in Statistics, Iowa State University,   2019 - Present</li>
-</ul>
-<p>Co-advised by Dr. <a href="https://pliu.rbind.io/">Peng Liu</a>, Dr. <a href="https://yumou.org/">Yumou Qiu</a></p>
-<ul>
+      <p>This is a blog describing my first experience creating a simple R package on class STAT 585 at ISU.</p>
+<p><strong>Basic Workflow</strong></p>
+<ol>
 <li>
-<p>M.S. in Statistics-Data Science, University of Wisconsin – Madison,   2017- 2019</p>
+<p>Create a basic R package in R studio using New Project - New Dictionary - R Package</p>
 </li>
 <li>
-<p>B.S. in Statistics, East China Normal University,  2013- 2018</p>
-</li>
-</ul>
-<p><strong>Research Interests</strong></p>
-<ul>
-<li>
-<p>Multivariate analysis; Dimension reduction (PCA, CCA, etc.); Machine learning;</p>
+<p>Write functions in R/FuncName.R, including roxygen comments at the beginning of each function.</p>
 </li>
 <li>
-<p>Omics data analysis; Sequencing data normalization; Machine learning applications in omics data.</p>
-</li>
-</ul>
-<p><strong>Experiences</strong></p>
-<ul>
-<li>
-<p>Memorial Sloan Kettering Cancer Center: research assistant,  summer 2021,   advised by Dr. <a href="https://www.mskcc.org/profile/li-xuan-qin">Lixuan Qin</a></p>
+<p>Run devtools::document() to update NAMESPACE and man/FuncName.Rd</p>
 </li>
 <li>
-<p>dMed Biopharmaceutical Co., Ltd: biostatistician intern,  summer 2018</p>
+<p>Run devtools::check() to make sure there is no error, no warning, no notes before build the package</p>
 </li>
-</ul>
+<li>
+<p>Using CMD+shift+B to build the package, it will automatically library the new package so that we can try it ourselves.</p>
+</li>
+</ol>
+<p><strong>Using other packages in FuncName.R</strong></p>
+<ol>
+<li>
+<p>Use package MASS: roxygen comment @import MASS, Description usethis::use_package(&ldquo;MASS&rdquo;,type=&ldquo;import&rdquo;), MASS::FunctionToUse in main of FuncName.R</p>
+</li>
+<li>
+<p>Library package MASS: @depends</p>
+</li>
+<li>
+<p>Others: @suggests</p>
+</li>
+</ol>
+<p><strong>Including data</strong></p>
+<ol>
+<li>
+<p>Data should be in .rda file. Use usethis::use_data(newdata), it will create an newdata.rda file in data/.</p>
+</li>
+<li>
+<p>Manually create newdata.R in R/, including roxygen comments at the beginning, and include &ldquo;newdata&rdquo; as the main function text.</p>
+</li>
+</ol>
 
     </div>
   </article>
