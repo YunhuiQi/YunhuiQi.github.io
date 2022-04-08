@@ -6,22 +6,19 @@
 <meta name="generator" content="Hugo 0.94.2" />
 
 
-<title>Yunhui&#39;s Blogs</title>
-<meta property="og:title" content="Yunhui&#39;s Blogs">
-<meta property="og:type" content="website">
+<title>Use renv - Yunhui&#39;s Blogs</title>
+<meta property="og:title" content="Use renv - Yunhui&#39;s Blogs">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
-<meta property="description" content="Blogs for Yunhui">
+  
 
 
 
 
-
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Yunhui&#39;s Blogs" />
 
 
 
@@ -60,31 +57,43 @@
 
 <main class="content" role="main">
 
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Use renv</h1>
+
+    
+    <span class="article-date">2022-04-08</span>
+    
+
+    <div class="article-content">
+      <p>This is a blog describing how to use package renv to facilate the running of github actions.</p>
+<ol>
+<li>
+<p>Open project, remove all the packages will be used.</p>
+</li>
+<li>
+<p>Library renv, run renu::init().</p>
+</li>
+<li>
+<p>Install necessary packages.</p>
+</li>
+<li>
+<p>Run renv::snapshot().</p>
+</li>
+<li>
+<p>Push all the files to github, done.</p>
+</li>
+</ol>
+<p>Pay attention to curl, it often suffers problems in github actions.</p>
+
+    </div>
+  </article>
+
   
-  <div class="archive">
-    
-    
-    
-    
-    
-    <h2 class="archive-title">2022</h2>
-    
-    <article class="archive-item">
-      <a href="/2022/04/08/use-renv/" class="archive-item-link">Use renv</a>
-      <span class="archive-item-date">
-        2022-04-08
-      </span>
-    </article>
-    
-    <article class="archive-item">
-      <a href="/2022/03/14/create-an-r-package-basic/" class="archive-item-link">Create an R package Basic</a>
-      <span class="archive-item-date">
-        2022-03-14
-      </span>
-    </article>
-    
-    
-  </div>
+
 
 </main>
 

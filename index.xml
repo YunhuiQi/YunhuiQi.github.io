@@ -6,7 +6,22 @@
     <description>Recent content on Yunhui&#39;s Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use renv</title>
+      <link>/2022/04/08/use-renv/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/04/08/use-renv/</guid>
+      <description>This is a blog describing how to use package renv to facilate the running of github actions.
+  Open project, remove all the packages will be used.
+  Library renv, run renu::init().
+  Install necessary packages.
+  Run renv::snapshot().
+  Push all the files to github, done.
+  Pay attention to curl, it often suffers problems in github actions.</description>
+    </item>
+    
     <item>
       <title>Create an R package Basic</title>
       <link>/2022/03/14/create-an-r-package-basic/</link>
