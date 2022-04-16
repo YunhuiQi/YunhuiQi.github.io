@@ -6,7 +6,38 @@
     <description>Recent content in Posts on Yunhui&#39;s Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a blog post</title>
+      <link>/2022/04/16/create-a-blog-post/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/04/16/create-a-blog-post/</guid>
+      <description>This is a blog describing how to add a blog post on github.io. Contents are form Dr. Hofmann&amp;rsquo;s blog 8 instructions.
+  Consider adding a link to your CV or other interesting project pages by modifying the setup/config.toml file. Here is a link to the page explaining toml syntax.
+  Edit source/content/about.md to describe you.
+  Add new content (if you want) using blogdown::add_content()
+  Use blogdown::new_post(&amp;quot;post name&amp;quot;) to make a new post.</description>
+    </item>
+    
+    <item>
+      <title>Using testthat and covr</title>
+      <link>/2022/04/16/using-testthat-and-covr/</link>
+      <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/04/16/using-testthat-and-covr/</guid>
+      <description>This is a blog describing how to use testthat and covr.
+  In your package, run usethis::use_testthat() to set up the tests folder.
+  For each function, run usethis::use_test(&amp;ldquo;Rfuncname&amp;rdquo;). It will automatically create the corresponding test function for each R function.
+  Add test block including multiple testing statements. e.g:
+  context(&amp;ldquo;test-basics&amp;rdquo;)
+test_that(&amp;ldquo;multiplication works&amp;rdquo;,
+{expect_equal(2 * 2, 4)
+expect_output(function(x, y))
+expect_length(function(x, y), 1)}
+)   Test packages using Ctrl/CMD - Shift - T or use the Build Menu</description>
+    </item>
+    
     <item>
       <title>Use renv</title>
       <link>/2022/04/08/use-renv/</link>
