@@ -6,7 +6,22 @@
     <description>Recent content on Yunhui&#39;s Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Misc of package development</title>
+      <link>/2022/04/29/misc-of-package-development/</link>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/04/29/misc-of-package-development/</guid>
+      <description>PAT: When personal access token expires, generate a new one and update:
+gitcreds::gitcreds_set()
+usethis::edit_r_environ() and check whether the PAT is new.
+Sys.getenv(&amp;ldquo;GITHUB_PAT&amp;rdquo;) to check whether the PAT is new
+Badge: license badge is just add the corresponding line to readme.
+R-CMD-check is just usethis::use_github_actions()
+Readme and vignettes: Everytime update, run devtools::build_readme() and knit readme.rmd and pkgdown::build_sites()</description>
+    </item>
+    
     <item>
       <title>Create a blog post</title>
       <link>/2022/04/16/create-a-blog-post/</link>

@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.94.2" />
 
 
-<title>Posts - Yunhui&#39;s Blogs</title>
-<meta property="og:title" content="Posts - Yunhui&#39;s Blogs">
+<title>Misc of package development - Yunhui&#39;s Blogs</title>
+<meta property="og:title" content="Misc of package development - Yunhui&#39;s Blogs">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -19,8 +19,6 @@
 
 
 
-
-<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Yunhui&#39;s Blogs" />
 
 
 
@@ -59,50 +57,34 @@
 
 <main class="content" role="main">
 
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Misc of package development</h1>
+
+    
+    <span class="article-date">2022-04-29</span>
+    
+
+    <div class="article-content">
+      <h4 id="pat">PAT:</h4>
+<p>When personal access token expires, generate a new one and update:</p>
+<p>gitcreds::gitcreds_set()</p>
+<p>usethis::edit_r_environ() and check whether the PAT is new.</p>
+<p>Sys.getenv(&ldquo;GITHUB_PAT&rdquo;) to check whether the PAT is new</p>
+<h4 id="badge">Badge:</h4>
+<p>license badge is just add the corresponding line to readme.</p>
+<p>R-CMD-check is just usethis::use_github_actions()</p>
+<h4 id="readme-and-vignettes">Readme and vignettes:</h4>
+<p>Everytime update, run devtools::build_readme() and knit readme.rmd and pkgdown::build_sites()</p>
+
+    </div>
+  </article>
+
   
-  <div class="archive">
-    
-    
-    
-    <h2 class="archive-title">2022</h2>
-    
-    <article class="archive-item">
-      <a href="/2022/04/29/misc-of-package-development/" class="archive-item-link">Misc of package development</a>
-      <span class="archive-item-date">
-        2022-04-29
-      </span>
-    </article>
-    
-    <article class="archive-item">
-      <a href="/2022/04/16/using-testthat-and-covr/" class="archive-item-link">Using testthat and covr</a>
-      <span class="archive-item-date">
-        2022-04-16
-      </span>
-    </article>
-    
-    <article class="archive-item">
-      <a href="/2022/04/16/create-a-blog-post/" class="archive-item-link">Create a blog post</a>
-      <span class="archive-item-date">
-        2022-04-16
-      </span>
-    </article>
-    
-    <article class="archive-item">
-      <a href="/2022/04/08/use-renv/" class="archive-item-link">Use renv</a>
-      <span class="archive-item-date">
-        2022-04-08
-      </span>
-    </article>
-    
-    <article class="archive-item">
-      <a href="/2022/03/14/create-an-r-package-basic/" class="archive-item-link">Create an R package Basic</a>
-      <span class="archive-item-date">
-        2022-03-14
-      </span>
-    </article>
-    
-    
-  </div>
+
 
 </main>
 
